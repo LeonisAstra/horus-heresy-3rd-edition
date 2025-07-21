@@ -129,6 +129,10 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
 - Until the end of the first Battle Turn of a Battle, all models in this Army with the Infantry or Paragon Type and the White Scars Trait have the Fast (2) special rule.</description>
           <comment>Implementation of the FOC change is not ready.</comment>
         </rule>
+        <rule name="Death by a Thousand Cuts" id="da8b-ef22-b3d8-b966" hidden="false">
+          <description>While a Model with this Special Rule is engaged in a Challenge, the Controlling Player can select the &quot;Death by a Thousand Cuts&quot; Gambit.</description>
+          <comment>Rule</comment>
+        </rule>
       </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="440"/>
@@ -485,6 +489,12 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Seeker of Atonement" id="998a-db76-ca15-6ff1" hidden="false">
+          <description>While a Model with this Special Rule is engaged in a Challenge, the Controlling Player can select the &quot;Seeker of Atonment&quot; Gambit.</description>
+          <comment>Rule</comment>
+        </rule>
+      </rules>
       <profiles>
         <profile name="Seeker of Atonement" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="120f-41f1-770e-26d4">
           <characteristics>
