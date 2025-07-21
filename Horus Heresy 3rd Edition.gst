@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -4452,7 +4452,11 @@
     </profileType>
     <profileType name="Reaction" id="c14c-ecfd-ea65-58c9" hidden="false" sortIndex="14">
       <characteristicTypes>
-        <characteristicType name="Description" id="5d02-0e54-0f6a-0f0b"/>
+        <characteristicType name="Summary" id="5d02-0e54-0f6a-0f0b"/>
+        <characteristicType name="Trigger" id="02e4-3f90-3125-f8b4"/>
+        <characteristicType name="Cost" id="954a-972f-5c94-2ede"/>
+        <characteristicType name="Target" id="e102-8fdd-9cd4-c0f9"/>
+        <characteristicType name="Process" id="57cf-1c68-a020-2529"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Vehicle" id="2a80-eec8-a736-2fe3" hidden="false" sortIndex="2">
