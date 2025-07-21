@@ -129,11 +129,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
 - Until the end of the first Battle Turn of a Battle, all models in this Army with the Infantry or Paragon Type and the White Scars Trait have the Fast (2) special rule.</description>
           <comment>Implementation of the FOC change is not ready.</comment>
         </rule>
-        <rule name="Death by a Thousand Cuts (Gambit)" id="1688-abe4-a852-5851" hidden="false" publicationId="b905-0414-1057-bb34">
-          <description>&quot;This Gambit reduces the Strength of an opponent when they are wounded.&quot;
-If this Gambit is selected during the Strike Step, the Strength of attacks made by the enemy Model are modified by -1 if that Model&apos;s Wound Characteristics has been reduced from its Base Value. This cannot reduce the Strength Characteristic of an attack below 1.</description>
-          <comment>Gambit</comment>
-        </rule>
       </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="440"/>
@@ -165,6 +160,14 @@ If this Gambit is selected during the Strike Step, the Strength of attacks made 
           </modifiers>
         </infoLink>
       </infoLinks>
+      <profiles>
+        <profile name="Death by a Thousand Cuts" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="c734-9f77-cf99-1777">
+          <characteristics>
+            <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">&quot;This Gambit reduces the Strength of an opponent when they are wounded.&quot;</characteristic>
+            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected during the Strike Step, the Strength of attacks made by the enemy Model are modified by -1 if that Model&apos;s Wound Characteristics has been reduced from its Base Value. This cannot reduce the Strength Characteristic of an attack below 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Qin Xa" hidden="false" id="0935-9158-92d0-5528" publicationId="b905-0414-1057-bb34" sortIndex="2">
       <selectionEntries>
@@ -482,13 +485,14 @@ If this Gambit is selected during the Strike Step, the Strength of attacks made 
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule name="Seeker of Atonement (Gambit)" id="4770-3647-d572-49d3" hidden="false">
-          <description>&quot;This Gambit allows Hibou Khan to avoid being Removed as a Casualty.&quot;
-While this Gambit is selected, if this Model is reduced to 0 Wounds in Step 4 of the Strike Step, its Controlling Player can roll a Dice. On a result of 4+, this Model is not Removed as a Casualty but instead remains Engaged in the Challenge with a Wounds Characteristic of 1 and its Controlling Player gains Challenge Advantage.</description>
-          <comment>Gambit</comment>
-        </rule>
-      </rules>
+      <profiles>
+        <profile name="Seeker of Atonement" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="120f-41f1-770e-26d4">
+          <characteristics>
+            <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">&quot;This Gambit allows Hibou Khan to avoid being Removed as a Casualty.&quot;</characteristic>
+            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">While this Gambit is selected, if this Model is reduced to 0 Wounds in Step 4 of the Strike Step, its Controlling Player can roll a Dice. On a result of 4+, this Model is not Removed as a Casualty but instead remains Engaged in the Challenge with a Wounds Characteristic of 1 and its Controlling Player gains Challenge Advantage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kontos Power Lance" hidden="false" id="460b-3b52-f7d1-7d69" publicationId="b905-0414-1057-bb34" sortIndex="10">
       <profiles>
@@ -923,15 +927,8 @@ While this Gambit is selected, if this Model is reduced to 0 Wounds in Step 4 of
     <entryLink import="true" name="Kyzagan Assault Speeder" hidden="false" id="2755-5fcf-4ecd-79e6" type="selectionEntry" targetId="6efd-34c7-2212-1474" sortIndex="7"/>
   </entryLinks>
   <sharedRules>
-    <rule name="Path of the Warrior" id="185c-6ad3-297b-4834" hidden="false">
-      <comment>Gambit</comment>
-      <description>&quot;The Controlling Player may take a chance to gain a bonus to the Focus Roll.&quot;
-
-When this Gambit is selected, before making the Focus Roll, the Controlling Player must declare a choice to &apos;Strike Low&apos; (predicting the result of the next Focus Roll, before any modifiers are applied, is 1-3) or to &apos;Strike High&apos; (predicting the result of the next Focus Roll, before any modifiers are applied, is 4-6). If the result of the Focus Roll corresponds with their choice, they may ignore all negative modifiers and only apply positive modifiers to their Focus Roll.</description>
-    </rule>
     <rule name="Swift of Action" id="d3e8-b33b-5486-1510" hidden="false">
-      <description>&quot;The White Scars Player may increase their Model&apos;s Movement Characteristic.&quot;
-At the start of any of the Controlling Player&apos;s Turns, that Player may choose to increase the Movement Characteristic of any Model with this Special Rule and a Base Movement Characteristic of at least 1 and apply a modifier of +2 to that Characteristic until the end of that Player Turn.</description>
+      <description/>
       <comment>Legion Tactica</comment>
     </rule>
     <rule name="Chasing the Wind" id="2e7d-2244-126e-e29a" hidden="false">
@@ -953,4 +950,13 @@ Process:
 2) Once the Reacting Unit has complete this move, the Active Player must then proceed with the remainder of their Movement Phase.</description>
     </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile name="Path of the Warrior" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="5259-00ef-b46c-cb6a">
+      <characteristics>
+        <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">&quot;The White Scars Player may increase their Model&apos;s Movement Characteristic.&quot;</characteristic>
+        <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">At the start of any of the Controlling Player&apos;s Turns, that Player may choose to increase the Movement Characteristic of any Model with this Special Rule and a Base Movement Characteristic of at least 1 and apply a modifier of +2 to that Characteristic until the end of that Player Turn.</characteristic>
+      </characteristics>
+      <comment>WS Unique Gambit</comment>
+    </profile>
+  </sharedProfiles>
 </catalogue>
