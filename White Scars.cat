@@ -903,12 +903,17 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="af26-c638-69e8-b984" targetId="cf96-8891-3f9a-8921">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c1e-e67f-4bbf-f425"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c1e-e67f-4bbf-f425"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Recon" hidden="false" id="73ef-10e2-8b96-b3c0" targetId="2b65-a3f2-620a-dc58">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="535e-ea30-8840-8e81"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Prime Fast attack" hidden="false" id="d4f3-6393-54a3-a5de" targetId="c291-144b-3da6-37ed" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a82e-35da-2a84-2395"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -941,10 +946,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       <description/>
       <comment>Legion Tactica</comment>
     </rule>
-    <rule name="Chasing the Wind" id="2e7d-2244-126e-e29a" hidden="false">
-      <comment>Advanced Reaction</comment>
-      <description/>
-    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile name="Path of the Warrior" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="5259-00ef-b46c-cb6a">
@@ -953,17 +954,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">At the start of any of the Controlling Player&apos;s Turns, that Player may choose to increase the Movement Characteristic of any Model with this Special Rule and a Base Movement Characteristic of at least 1 and apply a modifier of +2 to that Characteristic until the end of that Player Turn.</characteristic>
       </characteristics>
       <comment>WS Unique Gambit</comment>
-    </profile>
-    <profile name="Chasing the Wind" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="7409-ec61-4159-9935">
-      <characteristics>
-        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">&quot;This Advanced Reaction allows the Controlling Player to make an additional Move with the Reacting Unit.&quot;
-</characteristic>
-        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Chasing the Wind Advanced Reaction in Step 2 of the Move Sub-Phase process, if an enemy Unit ends a move within 12&quot; and in Line of Sight of a Unit that only includes Models with the White Scars Trait under the Reactive Player&apos;s Control.</characteristic>
-        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Chasing the Wind Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
-        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Move triggered the Advanced Reaction. Once the cost has been paid, the Reactive Player must select one Unit that only includes Models with the White Scars Trait under their control that is within 12&quot; and has Line of Sight to the Target Unit, that Unit is the Reacting Unit.</characteristic>
-        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1) Once the Target Unit has finished its Move, the Reactive Player may make a Move with the Reacting Unit, following the normal Rules for Movement, including applying any modifiers due to Difficult Terrain and making Test required due to Dangerous Terrain, but the Reacting Unit may not Rush.
-2) Once the Reacting Unit has complete this move, the Active Player must then proceed with the remainder of their Movement Phase.</characteristic>
-      </characteristics>
     </profile>
   </sharedProfiles>
 </catalogue>
