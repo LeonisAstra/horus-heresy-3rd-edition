@@ -195,11 +195,11 @@
     <categoryEntry name="Prime War-engine" id="9699-67c9-2c0b-e64b" hidden="false"/>
     <categoryEntry name="Prime Support" id="1c79-ecdf-9a64-84c9" hidden="false"/>
     <categoryEntry name="Prime Transport" id="fc27-1a48-84ae-aa7b" hidden="false"/>
-    <categoryEntry name="Prime Heavy assault" id="1e95-35f0-1353-ffa1" hidden="false"/>
-    <categoryEntry name="Prime Heavy transport" id="abff-3686-c39a-9a24" hidden="false"/>
+    <categoryEntry name="Prime Heavy Assault" id="1e95-35f0-1353-ffa1" hidden="false"/>
+    <categoryEntry name="Prime Heavy Transport" id="abff-3686-c39a-9a24" hidden="false"/>
     <categoryEntry name="Prime Armour" id="4460-7bc1-4d80-aecb" hidden="false"/>
     <categoryEntry name="Prime Recon" id="6348-ecd0-714d-042a" hidden="false"/>
-    <categoryEntry name="Prime Fast attack" id="c291-144b-3da6-37ed" hidden="false"/>
+    <categoryEntry name="Prime Fast Attack" id="c291-144b-3da6-37ed" hidden="false"/>
     <categoryEntry name="Vehicle Model Type" id="aa5a-c9fd-1eb1-7a45" hidden="false"/>
     <categoryEntry name="Rapid Sub-Type" id="a5c6-b359-cecb-e0b1" hidden="false"/>
     <categoryEntry name="Unstoppable Sub-Type" id="5555-f37e-8ad0-20c0" hidden="false">
