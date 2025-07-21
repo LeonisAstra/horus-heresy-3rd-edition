@@ -300,6 +300,18 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5</characteristic>
               </characteristics>
             </profile>
+            <profile name="Stormseer" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="9b7b-ff20-4e8d-f04d">
+              <characteristics>
+                <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4a7e-871d-36e6-c483" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb48-24bb-c528-7f7e" includeChildSelections="false"/>
@@ -324,7 +336,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd23-526f-cf5d-0743"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Cyber-hawk" hidden="false" id="5795-e2c7-5f29-8a4c" type="selectionEntry" targetId="b596-2b99-fbf4-d536" sortIndex="5">
+            <entryLink import="true" name="Cyber-hawk" hidden="false" id="5795-e2c7-5f29-8a4c" type="selectionEntry" targetId="b596-2b99-fbf4-d536" sortIndex="6">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
@@ -353,7 +365,58 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b53-7d18-dcc2-1b77" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="May have up to two of the following Psychic Disciplines:" id="4c9e-25ef-22c7-b959" hidden="false" sortIndex="5">
+              <entryLinks>
+                <entryLink import="true" name="Divination" hidden="false" id="960e-1d18-26f2-b82c" type="selectionEntry" targetId="5f50-43e2-30a1-01c8" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff1d-64c3-ed93-e8b6" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thaumaturgy" hidden="false" id="bc37-f3df-9953-73db" type="selectionEntry" targetId="15a9-e44f-2393-0d6a" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8abd-9824-ac1b-c2ac" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Telepathy" hidden="false" id="3ecb-b70b-8917-0add" type="selectionEntry" targetId="13c2-f899-efef-20cb" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2d0-e2a6-0330-10fa" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Stormcalling" hidden="false" id="1cf8-7292-bf04-7cf3" type="selectionEntry" targetId="4a7e-871d-36e6-c483" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b4d-326a-446f-cf77" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98a1-71ed-c0dc-0871" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="385b-64d9-b788-d159" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Move Through Cover" id="0d00-1505-2120-7305" hidden="true" type="rule" targetId="44d9-f20d-00bf-dc98">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4a7e-871d-36e6-c483" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -364,7 +427,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="5bb2-a602-9a2a-eb05" primary="true" name="Command"/>
       </categoryLinks>
-      <comment>Needs Psychic Disciplines</comment>
       <infoLinks>
         <infoLink name="[Allegiance]" id="46ea-01cc-7ca9-c4ff" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="400e-e903-4fae-be4e" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -889,6 +951,55 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="51e2-4728-e3fa-8798" primary="true" name="Support"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stormcalling" hidden="false" id="4a7e-871d-36e6-c483">
+      <profiles>
+        <profile name="Call of the Wind" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="d74c-e68f-4245-ed3c">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Power is used in the Movement Phase and can allow the Target Unit to move its full Rush distance as a normal Move.</characteristic>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Call of the Wind Psychic Power in the Movement Phase, when selecting a Unit under their control that includes at least one Model with the Stormseer Trait to Move and before any Move is made for that Unit.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Stormseer Trait that is part of the Unit that was selected to Move.</characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Active Player with at least one Model within 12&quot; of the Focus and with Line of Sight to the Focus, including the Unit that the Focus is part of, and must only include Models with the White Scars Trait. The Target may not be a Unit that is Locked in Combat, or otherwise ineligible to Move normally, for example, it is under the effects of the Routed Status, and may not include any Models with the Vehicle Type. </characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power are resolved immediately.</characteristic>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1) Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2) If this Psychic Power is successfully Manifested, until the end of the Phase, the Target Unit cannot Rush, but the Movement Characteristic of each Model in the Target Unit is modified by a value equal to that Model&apos;s Initiative Characteristic. 
+3) If the Manifestation Check fails then there is no further effect to the Target Unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unseen Bolt" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="70a9-6064-63a5-8de3">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (5&quot;), Barrage (2), Stun (2), Force (RS)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="9775-09c4-396c-3d0b" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <modifiers>
+            <modifier type="set" value="Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage (X)" id="e232-f469-f79c-0c09" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+          <modifiers>
+            <modifier type="set" value="Barrage (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stun (X)" id="4147-6d76-612c-c12e" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <modifiers>
+            <modifier type="set" value="Stun (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Force (X)" id="aa4f-c476-e0c8-69cc" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <modifiers>
+            <modifier type="set" value="Force (RS)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="37c5-72c7-2f9f-397b" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -897,6 +1008,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
     <catalogueLink type="catalogue" name="Special Rules" id="5893-3cda-f061-c962" targetId="106b-693b-99f2-00c3"/>
     <catalogueLink type="catalogue" name="Weapons" id="3bec-4536-94e0-482e" targetId="a22d-4dd0-c59d-57d3"/>
     <catalogueLink type="catalogue" name="Wargear" id="b55e-4420-2cff-bb2d" targetId="fcc7-4319-bb04-2c25"/>
+    <catalogueLink type="catalogue" name="Psychic" id="4936-3c5c-ca97-f56f" targetId="1b2d-2038-39a7-f387"/>
   </catalogueLinks>
   <forceEntries>
     <forceEntry name="Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="false" publicationId="b905-0414-1057-bb34">
