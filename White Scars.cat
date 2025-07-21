@@ -140,7 +140,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="a46f-a465-0ead-d6b8" id="f975-cd65-149d-40a4" primary="true" name="Lord of War"/>
+        <categoryLink targetId="22ee-7208-4089-b005" id="3b41-1bc4-8eb2-2359" primary="true" name="Warlord"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -911,7 +911,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="535e-ea30-8840-8e81"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Prime Fast attack" hidden="false" id="d4f3-6393-54a3-a5de" targetId="c291-144b-3da6-37ed" type="categoryEntry">
+        <categoryLink name="Prime Fast Attack" hidden="false" id="d4f3-6393-54a3-a5de" targetId="c291-144b-3da6-37ed">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a82e-35da-2a84-2395"/>
           </constraints>
@@ -943,7 +943,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
   </entryLinks>
   <sharedRules>
     <rule name="Swift of Action" id="d3e8-b33b-5486-1510" hidden="false">
-      <description/>
       <comment>Legion Tactica</comment>
     </rule>
   </sharedRules>
