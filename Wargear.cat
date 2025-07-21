@@ -129,6 +129,17 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b70-28b7-db50-8336" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61a8-09af-e753-34fd" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="e4a7-82e5-8cd5-6c21" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>Bulky (3) Included</comment>
     </selectionEntry>
   </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="New Catalogue (link)" id="43ac-6c9f-2795-068b" targetId="106b-693b-99f2-00c3"/>
+  </catalogueLinks>
 </catalogue>

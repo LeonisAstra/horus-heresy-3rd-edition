@@ -532,6 +532,8 @@ A Model with this Special Rule is never forced to make Shooting Attacks as Snap 
             <modifier type="set" value="Support Unit (1)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="f67d-8ecc-7601-3e00" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="ca2e-71e2-ea6c-10d3" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <rules>
         <rule name="Fatal Strike" id="22c9-a8ff-c91a-9b1f" hidden="false">
@@ -544,6 +546,127 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dark Fury Squad" hidden="false" id="8487-ac3b-d0ec-6d08" sortIndex="4">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dark Fury" hidden="false" id="c88e-ddfb-6f84-acd8" sortIndex="2">
+          <categoryLinks>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="45e5-7334-5c6e-8d89" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="6867-5795-f158-9462" primary="true" name="Infantry Model Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b51d-5520-4eaa-8a54" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="4446-9c47-58a0-f440" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="false" id="c0dc-0bc8-3979-b680" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="4"/>
+            <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="false" id="847d-0e02-a37d-c47f" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d85a-5b5d-4b45-855e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a175-7a1a-f6dd-e7f8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="33f8-6cd3-05e1-625f" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="941b-57de-44d7-e7fc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28f3-0b88-7f60-814e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="9c7f-4b30-0cea-e861" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dea-41e6-efbf-cc9f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8eb-bd33-7373-5ea2" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Precision (X)" id="0dbb-9558-493d-67af" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+              <modifiers>
+                <modifier type="set" value="Precision (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chooser of the Slain" hidden="false" id="9b5f-3411-f1b0-f87d" sortIndex="1">
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="1604-d86e-e170-1956" primary="true" name="Infantry Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="def8-771e-8cd7-4aed" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="8045-89a4-76d4-fcef" id="6604-8694-4b2d-c434" primary="false" name="Sergeant Model Sub-Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d291-9ca4-4245-4709" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d18e-6cfa-4868-86a4" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Precision (X)" id="cdc9-6bb8-ef45-6f04" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+              <modifiers>
+                <modifier type="set" value="Precision (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="false" id="c0dc-0bc8-3979-b680" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="4"/>
+            <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="false" id="a751-ebcd-4f74-d48a" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894c-1a34-7fe1-116f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d073-cedd-7237-d7a3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="ee5e-0884-c9b0-0f96" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ac7-05e3-3381-c47f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ecb-c080-2ef1-2fd8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="0830-fe2c-8500-d367" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="225f-3c01-9936-002f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="630c-c819-54ba-370a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="2329-454a-b531-5ca7" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18d2-4e85-23d6-5745" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="078a-4216-b559-e1b6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="2" field="d18e-6cfa-4868-86a4">
+              <conditions>
+                <condition type="atLeast" value="9" field="selections" scope="8487-ac3b-d0ec-6d08" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <comment>Sgt Points included due to Upgrade Cost</comment>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="0bce-7056-113b-3aef" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="e65c-47a5-7faf-e7ac" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Deep Strike" id="dafd-4749-7b24-e0bd" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="9cfb-a556-2621-a788" primary="true" name="Elites"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -558,5 +681,30 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
     <entryLink import="true" name="Corvus Corax" hidden="false" id="0528-233c-3adc-04b0" type="selectionEntry" targetId="e0a6-5800-3e64-4163" sortIndex="1"/>
     <entryLink import="true" name="Kaedes Nex" hidden="false" id="836e-a26a-ef08-61d7" type="selectionEntry" targetId="7447-6e18-ef24-afb0" sortIndex="2"/>
     <entryLink import="true" name="Mor Deythan Squad" hidden="false" id="d295-c96d-41cb-d551" type="selectionEntry" targetId="4bb8-d53e-23a8-64da" sortIndex="3"/>
+    <entryLink import="true" name="Dark Fury Squad" hidden="false" id="c213-20ea-1ed8-11a0" type="selectionEntry" targetId="8487-ac3b-d0ec-6d08" sortIndex="4"/>
   </entryLinks>
+  <sharedRules>
+    <rule name="Shadow Walkers" id="01bc-3bfe-f526-3be0" hidden="false">
+      <comment>Legion Tactica</comment>
+      <description>&quot;Raven Guard&quot; Models are harder to hit with Shooting Attacks made at longer range.&quot;
+When a Unit that includes only Models with this Special Rule is the target of a Shooting Attack, all attacks must be made as Snap Shots when the distance between the closest Model in the attacking Unit and the Target Unit is 18&quot; or greater.</description>
+    </rule>
+  </sharedRules>
+  <forceEntries>
+    <forceEntry name="Decapitation Cadre" id="0f6b-6347-03d5-8404" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Recon" hidden="false" id="869e-e26f-4787-ef38" targetId="2b65-a3f2-620a-dc58" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6a0f-7daf-09ee-d05a"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="180e-edd8-1900-d01a" targetId="5d5e-958f-e388-50b5" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8a8-3438-4f05-c9b2"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <comment>Needs Mechanics &amp; Validation</comment>
+    </forceEntry>
+  </forceEntries>
 </catalogue>
