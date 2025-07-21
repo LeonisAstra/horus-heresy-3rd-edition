@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="340c-1d4f-1f31-fb70" name="                       XIX - Raven Guard" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="340c-1d4f-1f31-fb70" name="                       XIX - Raven Guard" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Corvus Corax" hidden="false" id="e0a6-5800-3e64-4163">
       <selectionEntries>
@@ -7,23 +7,21 @@
           <profiles>
             <profile name="Corvus Corax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ce77-ac4e-3b17-8420">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b"/>
-                <characteristic name="M" typeId="a106-a779-d272-5e93"/>
-                <characteristic name="WS" typeId="253c-d694-4695-c89e"/>
-                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b"/>
-                <characteristic name="S" typeId="498f-dce1-59fd-d8d7"/>
-                <characteristic name="T" typeId="3120-8275-e537-ecd2"/>
-                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d"/>
-                <characteristic name="I" typeId="af9d-7db8-dc95-71c1"/>
-                <characteristic name="A" typeId="024e-bdb1-7982-25a0"/>
-                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6"/>
-                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f"/>
-                <characteristic name="WP" typeId="f714-1726-37d3-44df"/>
-                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77"/>
-                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b"/>
-                <characteristic name="INV" typeId="a951-a772-7ce0-0b64"/>
-                <characteristic name="Special Rules" typeId="2cda-2fb9-4239-cbcb"/>
-                <characteristic name="Traits" typeId="6a9a-2af3-00c4-d134"/>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Paragon (Unique, Antigrav)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">16</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">7</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">6</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">6</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">6</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">6</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">10</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">10</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -31,8 +29,33 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6810-44e1-6914-ee02" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a19-109d-e148-5dfa" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Sire of the Raven Guard" id="6a64-ef1a-b001-1016" hidden="false"/>
+            <rule name="The Shadowed Lord" id="009c-47e2-aedf-2364" hidden="false"/>
+          </rules>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="537a-dc71-c2fa-e602" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (6)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="5718-d25d-d7bb-e47c" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="a010-436e-2d45-3ced" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="7799-e1d6-762b-700b" id="000b-2f7d-2ddd-6884" primary="true" name="Paragon Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="fc76-a7bf-3a97-16ec" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="b2d3-c4a4-1b6b-aa29" primary="false" name="Antigrav Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="6ff0-e3e6-9afb-0bab" primary="true" name="Warlord"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
