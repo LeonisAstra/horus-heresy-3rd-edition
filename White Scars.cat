@@ -30,8 +30,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f4d-6cb8-cd9a-6e59" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="a46f-a465-0ead-d6b8" id="8e02-facf-f0a2-a208" primary="true" name="Lord of War"/>
+            <categoryLink targetId="a46f-a465-0ead-d6b8" id="8e02-facf-f0a2-a208" primary="false" name="Lord of War"/>
             <categoryLink targetId="b980-187b-2b17-d635" id="e0f6-24b8-27e1-0a01" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="7799-e1d6-762b-700b" id="5978-eb56-7179-7bb7" primary="true" name="Paragon Model Type"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Storm&apos;s Voice" hidden="false" id="0838-482c-85f1-dd80" publicationId="b905-0414-1057-bb34" sortIndex="2">
@@ -128,6 +129,11 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
 - Until the end of the first Battle Turn of a Battle, all models in this Army with the Infantry or Paragon Type and the White Scars Trait have the Fast (2) special rule.</description>
           <comment>Implementation of the FOC change is not ready.</comment>
         </rule>
+        <rule name="Death by a Thousand Cuts (Gambit)" id="1688-abe4-a852-5851" hidden="false" publicationId="b905-0414-1057-bb34">
+          <description>&quot;This Gambit reduces the Strength of an opponent when they are wounded.&quot;
+If this Gambit is selected during the Strike Step, the Strength of attacks made by the enemy Model are modified by -1 if that Model&apos;s Wound Characteristics has been reduced from its Base Value. This cannot reduce the Strength Characteristic of an attack below 1.</description>
+          <comment>Gambit</comment>
+        </rule>
       </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="440"/>
@@ -153,16 +159,20 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <modifier type="set" value="Bulky (4)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Eternal Warrior (X)" id="2162-246e-c90b-8d9b" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+          <modifiers>
+            <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
-      <comment>Needs Gambit &amp; Eternal Warrior (2)</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Qin Xa" hidden="false" id="0935-9158-92d0-5528" publicationId="b905-0414-1057-bb34" sortIndex="2">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Qin Xa" hidden="false" id="3612-7539-b8a1-ac02" publicationId="b905-0414-1057-bb34" sortIndex="">
+        <selectionEntry type="model" import="true" name="Qin Xa" hidden="false" id="3612-7539-b8a1-ac02" publicationId="b905-0414-1057-bb34">
           <categoryLinks>
             <categoryLink targetId="b980-187b-2b17-d635" id="cbca-e38c-a709-40cf" primary="false" name="Unique Model Sub-Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="f276-d0cd-91f6-3c88" primary="false" name="Command Model Sub-type"/>
-            <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="196d-8ec3-c30f-cbf9" primary="true" name="High Command"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="f171-2011-58ba-4646" primary="true" name="Infantry Model Type"/>
           </categoryLinks>
           <profiles>
             <profile name="Qin Xa" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8da9-7f3d-2e61-213f" publicationId="b905-0414-1057-bb34">
@@ -261,7 +271,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <selectionEntry type="model" import="true" name="Stormseer" hidden="false" id="c45b-d7b8-0dfd-3dbe" publicationId="b905-0414-1057-bb34" sortIndex="0">
           <categoryLinks>
             <categoryLink targetId="9871-cb62-5283-2216" id="a2ac-c4a9-9d65-f90d" primary="false" name="Command Model Sub-type"/>
-            <categoryLink targetId="6dbf-654a-f06f-2d69" id="5efa-9518-742e-0822" primary="true" name="Command"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="82ad-7db9-7b66-fd80" primary="true" name="Infantry Model Type"/>
           </categoryLinks>
           <profiles>
             <profile name="Stormseer" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="aa36-64a0-92d4-22ae" publicationId="b905-0414-1057-bb34">
@@ -360,8 +370,8 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <categoryLinks>
             <categoryLink targetId="b980-187b-2b17-d635" id="a23f-2344-116e-15fb" primary="false" name="Unique Model Sub-Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="3e5f-a52a-0881-7e44" primary="false" name="Command Model Sub-type"/>
-            <categoryLink targetId="6dbf-654a-f06f-2d69" id="76ed-54d9-6c03-9102" primary="true" name="Command"/>
             <categoryLink targetId="901a-6b71-7a29-4597" id="4f4e-33d1-1ace-8054" primary="false" name="Officer of the Line (2)"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="d454-d254-24c3-8f43" primary="true" name="Infantry Model Type"/>
           </categoryLinks>
           <profiles>
             <profile name="Hibou Khan" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b074-b4c8-a8b7-2137" publicationId="b905-0414-1057-bb34">
@@ -472,7 +482,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           </conditions>
         </modifier>
       </modifiers>
-      <comment>Needs Gambit</comment>
+      <rules>
+        <rule name="Seeker of Atonement (Gambit)" id="4770-3647-d572-49d3" hidden="false">
+          <description>&quot;This Gambit allows Hibou Khan to avoid being Removed as a Casualty.&quot;
+While this Gambit is selected, if this Model is reduced to 0 Wounds in Step 4 of the Strike Step, its Controlling Player can roll a Dice. On a result of 4+, this Model is not Removed as a Casualty but instead remains Engaged in the Challenge with a Wounds Characteristic of 1 and its Controlling Player gains Challenge Advantage.</description>
+          <comment>Gambit</comment>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kontos Power Lance" hidden="false" id="460b-3b52-f7d1-7d69" publicationId="b905-0414-1057-bb34" sortIndex="10">
       <profiles>
@@ -551,6 +567,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           </profiles>
           <categoryLinks>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="3ebf-3529-8763-7777" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="a073-2d4a-5bed-123e" id="7158-5727-7a9a-ba23" primary="true" name="Cavalry Model Type"/>
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Kontos Power Lance" hidden="false" id="d5b6-3335-4113-e8f1" type="selectionEntry" targetId="460b-3b52-f7d1-7d69" sortIndex="1">
@@ -627,6 +644,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="0892-7538-bf85-e271" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="b50f-4c5b-2112-8e34" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="a073-2d4a-5bed-123e" id="f33d-2aa6-5cb8-6a98" primary="true" name="Cavalry Model Type"/>
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Kontos Power Lance" hidden="false" id="f0a2-af0b-4797-3ef5" type="selectionEntry" targetId="460b-3b52-f7d1-7d69" sortIndex="1">
@@ -739,6 +757,9 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1d58-0b96-3fb1-de07" includeChildSelections="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4d29-b83e-140c-7a52" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="927e-c68d-0a76-eb81" primary="true" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -759,13 +780,17 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <modifier type="set" value="Feel No Pain (6+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Vanguard (X)" id="13df-7a85-c4d5-8a08" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <comment>Need to add Vanguard (3) when added to core.</comment>
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="55d3-bf6e-4fe2-3928" primary="true" name="Heavy Assault"/>
       </categoryLinks>
@@ -822,6 +847,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="c701-6538-bb99-69f0" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="a073-2d4a-5bed-123e" id="38fa-585f-f351-81cb" primary="true" name="Cavalry Model Type"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -834,8 +860,12 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" id="4075-ac60-bbfc-746d" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+        <infoLink name="Firing Protocols (X)" id="0587-6649-61a0-3ce0" hidden="false" type="rule" targetId="84f2-5a93-c2eb-826f">
+          <modifiers>
+            <modifier type="set" value="Firing Protocols (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
-      <comment>Needs Firing Protocols (3)</comment>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="105"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -872,12 +902,55 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink import="true" name="Jaghatai Khan" hidden="false" id="0fd4-5d93-4678-4064" type="selectionEntry" targetId="8192-47ac-99f9-73e9" sortIndex="1"/>
-    <entryLink import="true" name="Qin Xa" hidden="false" id="aef2-d55a-ceca-ef8e" type="selectionEntry" targetId="0935-9158-92d0-5528" sortIndex="2"/>
-    <entryLink import="true" name="Hibou Khan" hidden="false" id="237b-ac58-1954-957e" type="selectionEntry" targetId="fd81-80fc-3d80-5f8b" sortIndex="3"/>
+    <entryLink import="true" name="Jaghatai Khan" hidden="false" id="0fd4-5d93-4678-4064" type="selectionEntry" targetId="8192-47ac-99f9-73e9" sortIndex="1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9b5c-a98c-1e67-4e3d" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Qin Xa" hidden="false" id="aef2-d55a-ceca-ef8e" type="selectionEntry" targetId="0935-9158-92d0-5528" sortIndex="2">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="eeb7-a0e0-4968-a34d" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Hibou Khan" hidden="false" id="237b-ac58-1954-957e" type="selectionEntry" targetId="fd81-80fc-3d80-5f8b" sortIndex="3">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="60e0-1c39-9467-7346" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
     <entryLink import="true" name="Stormseer" hidden="false" id="613c-ffd0-7238-a10c" type="selectionEntry" targetId="5123-b5ea-c6dc-7bb9" sortIndex="4"/>
-    <entryLink import="true" name="Golden Keshing" hidden="false" id="37a0-e9fb-e17c-cd83" type="selectionEntry" page="" targetId="fa6f-2652-34c9-2ea2" sortIndex="5"/>
+    <entryLink import="true" name="Golden Keshing" hidden="false" id="37a0-e9fb-e17c-cd83" type="selectionEntry" targetId="fa6f-2652-34c9-2ea2" sortIndex="5"/>
     <entryLink import="true" name="Ebon Keshig" hidden="false" id="795e-893e-346b-2ddb" type="selectionEntry" targetId="9f57-6829-5ec9-4d69" sortIndex="6"/>
     <entryLink import="true" name="Kyzagan Assault Speeder" hidden="false" id="2755-5fcf-4ecd-79e6" type="selectionEntry" targetId="6efd-34c7-2212-1474" sortIndex="7"/>
   </entryLinks>
+  <sharedRules>
+    <rule name="Path of the Warrior" id="185c-6ad3-297b-4834" hidden="false">
+      <comment>Gambit</comment>
+      <description>&quot;The Controlling Player may take a chance to gain a bonus to the Focus Roll.&quot;
+
+When this Gambit is selected, before making the Focus Roll, the Controlling Player must declare a choice to &apos;Strike Low&apos; (predicting the result of the next Focus Roll, before any modifiers are applied, is 1-3) or to &apos;Strike High&apos; (predicting the result of the next Focus Roll, before any modifiers are applied, is 4-6). If the result of the Focus Roll corresponds with their choice, they may ignore all negative modifiers and only apply positive modifiers to their Focus Roll.</description>
+    </rule>
+    <rule name="Swift of Action" id="d3e8-b33b-5486-1510" hidden="false">
+      <description>&quot;The White Scars Player may increase their Model&apos;s Movement Characteristic.&quot;
+At the start of any of the Controlling Player&apos;s Turns, that Player may choose to increase the Movement Characteristic of any Model with this Special Rule and a Base Movement Characteristic of at least 1 and apply a modifier of +2 to that Characteristic until the end of that Player Turn.</description>
+      <comment>Legion Tactica</comment>
+    </rule>
+    <rule name="Chasing the Wind" id="2e7d-2244-126e-e29a" hidden="false">
+      <comment>Advanced Reaction</comment>
+      <description>&quot;This Advanced Reaction allows the Controlling Player to make an additional Move with the Reacting Unit.&quot;
+
+
+Trigger: The Reactive Player may declare a Chasing the Wind Advanced Reaction in Step 2 of the Move Sub-Phase process, if an enemy Unit ends a move within 12&quot; and in Line of Sight of a Unit that only includes Models with the White Scars Trait under the Reactive Player&apos;s Control.
+
+
+Cost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Chasing the Wind Advanced Reaction, this cost paid as soon as the declaration is made.
+
+
+Target: The Target Unit is always the Unit whose Move triggered the Advanced Reaction. Once the cost has been paid, the Reactive Player must select one Unit that only includes Models with the White Scars Trait under their control that is within 12&quot; and has Line of Sight to the Target Unit, that Unit is the Reacting Unit.
+
+
+Process:
+1) Once the Target Unit has finished its Move, the Reactive Player may make a Move with the Reacting Unit, following the normal Rules for Movement, including applying any modifiers due to Difficult Terrain and making Test required due to Dangerous Terrain, but the Reacting Unit may not Rush.
+2) Once the Reacting Unit has complete this move, the Active Player must then proceed with the remainder of their Movement Phase.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

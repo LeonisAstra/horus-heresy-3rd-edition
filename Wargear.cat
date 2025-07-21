@@ -123,7 +123,7 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Move Through Cover" id="6d25-0c0c-5dcf-db68" hidden="false" type="rule" targetId="067d-781e-8a1e-6c9d"/>
+        <infoLink name="Move Through Cover" id="6d25-0c0c-5dcf-db68" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
       </infoLinks>
       <profiles>
         <profile name="Cyber-hawk" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="3eed-90fc-7ce1-9d22" publicationId="b905-0414-1057-bb34">
