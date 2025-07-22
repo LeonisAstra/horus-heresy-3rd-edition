@@ -4469,6 +4469,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <infoLinks>
+            <infoLink name="Wraiths" id="bc1b-f834-1d47-0f21" hidden="false" type="rule" targetId="84fd-366e-517d-e228"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
