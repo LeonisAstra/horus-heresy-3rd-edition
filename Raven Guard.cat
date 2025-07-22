@@ -693,12 +693,12 @@ When a Unit that includes only Models with this Special Rule is the target of a 
   <forceEntries>
     <forceEntry name="Decapitation Cadre" id="0f6b-6347-03d5-8404" hidden="false">
       <categoryLinks>
-        <categoryLink name="Recon" hidden="false" id="869e-e26f-4787-ef38" targetId="2b65-a3f2-620a-dc58" type="categoryEntry">
+        <categoryLink name="Recon" hidden="false" id="869e-e26f-4787-ef38" targetId="2b65-a3f2-620a-dc58">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6a0f-7daf-09ee-d05a"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="180e-edd8-1900-d01a" targetId="5d5e-958f-e388-50b5" type="categoryEntry">
+        <categoryLink name="Elites" hidden="false" id="180e-edd8-1900-d01a" targetId="5d5e-958f-e388-50b5">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8a8-3438-4f05-c9b2"/>
           </constraints>
@@ -707,4 +707,12 @@ When a Unit that includes only Models with this Special Rule is the target of a 
       <comment>Needs Mechanics &amp; Validation</comment>
     </forceEntry>
   </forceEntries>
+  <sharedProfiles>
+    <profile name="Decapitation Strike" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="0307-e161-ca95-b0a2">
+      <characteristics>
+        <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Model to make a single attack first, followed by the remainder of their attacks, if the first is successful.</characteristic>
+        <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may be selected once per Challenge. When selected, no Focus Roll is made, instead the Controlling Player of the Model for which this Gambit has been selected makes a single attack at the end of the Focus Step. If the Hit Test and Wound Test made for this attacks are both successful (i.e., they meet the required Target Number), the Controlling Player of the Model with this Gambit may then make the Remainder of the attacks the Model that this Gambit is selected for is eligible to make in the current Strike Step, minus the single attack already made. If either the Hit Test or Wound Test made for the initial attack are not successful, the Model for which this Gambit is selected may make no further attacks during this Strike Step.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
