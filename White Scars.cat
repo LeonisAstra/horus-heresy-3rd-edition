@@ -33,6 +33,8 @@
             <categoryLink targetId="a46f-a465-0ead-d6b8" id="8e02-facf-f0a2-a208" primary="false" name="Lord of War"/>
             <categoryLink targetId="b980-187b-2b17-d635" id="e0f6-24b8-27e1-0a01" primary="false" name="Unique Model Sub-Type"/>
             <categoryLink targetId="7799-e1d6-762b-700b" id="5978-eb56-7179-7bb7" primary="true" name="Paragon Model Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="33f6-6e31-1bad-3bdc" primary="false" name="Loyalist"/>
+            <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="75d4-1cf7-f9f2-5f69" primary="false" name="White Scars"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Storm&apos;s Voice" hidden="false" id="0838-482c-85f1-dd80" publicationId="b905-0414-1057-bb34" sortIndex="2">
@@ -141,6 +143,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </costs>
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="3b41-1bc4-8eb2-2359" primary="true" name="Warlord"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="3b01-6d0c-f87c-0181" primary="false" name="White Scars"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -180,6 +183,8 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink targetId="b980-187b-2b17-d635" id="cbca-e38c-a709-40cf" primary="false" name="Unique Model Sub-Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="f276-d0cd-91f6-3c88" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="f171-2011-58ba-4646" primary="true" name="Infantry Model Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="beae-ca46-de5e-4b61" primary="false" name="Loyalist"/>
+            <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="d5bf-80a1-1db1-aa34" primary="false" name="White Scars"/>
           </categoryLinks>
           <profiles>
             <profile name="Qin Xa" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8da9-7f3d-2e61-213f" publicationId="b905-0414-1057-bb34">
@@ -206,7 +211,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c57c-dbf7-bd09-9353" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ccf-3ec2-8c7b-3a12" includeChildSelections="false"/>
           </constraints>
-          <comment>Needs Traits</comment>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="The Tails of the Dragon" hidden="false" id="aefb-47ab-00a4-54e0" publicationId="b905-0414-1057-bb34" sortIndex="1">
               <constraints>
@@ -264,6 +268,8 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="c796-3a6a-660e-af86" primary="true" name="High Command"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="7bc6-2f77-979b-9b8d" primary="false" name="White Scars"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="93f6-506e-cd5b-2bd4" primary="false" name="Loyalist"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -426,6 +432,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </costs>
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="5bb2-a602-9a2a-eb05" primary="true" name="Command"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="df24-b87e-cd6c-527b" primary="false" name="White Scars"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="46ea-01cc-7ca9-c4ff" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -441,6 +448,8 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink targetId="9871-cb62-5283-2216" id="3e5f-a52a-0881-7e44" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="901a-6b71-7a29-4597" id="4f4e-33d1-1ace-8054" primary="false" name="Officer of the Line (2)"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="d454-d254-24c3-8f43" primary="true" name="Infantry Model Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="f709-3ba0-6ca8-e6e7" primary="false" name="Loyalist"/>
+            <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="f600-3c51-d8fd-c9e8" primary="false" name="White Scars"/>
           </categoryLinks>
           <profiles>
             <profile name="Hibou Khan" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b074-b4c8-a8b7-2137" publicationId="b905-0414-1057-bb34">
@@ -543,6 +552,8 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="bdc7-4b15-527b-695a" primary="true" name="Command"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="8bbb-e59c-15cb-c3cc" primary="false" name="White Scars"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="68c2-7db5-2557-efe2" primary="false" name="Loyalist"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -790,6 +801,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </costs>
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="ae68-3b17-4a34-27e6" primary="true" name="Elites"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="9c19-2547-606b-3a60" primary="false" name="White Scars"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ebon Keshig" hidden="false" id="9f57-6829-5ec9-4d69" publicationId="7d63-5df4-c656-52de" sortIndex="6">
@@ -869,6 +881,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </costs>
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="55d3-bf6e-4fe2-3928" primary="true" name="Heavy Assault"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="c513-6924-3eda-5018" primary="false" name="White Scars"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kyzagan Assault Speeder" hidden="false" id="6efd-34c7-2212-1474" publicationId="b905-0414-1057-bb34" sortIndex="7">
@@ -949,6 +962,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </costs>
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="51e2-4728-e3fa-8798" primary="true" name="Support"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="36dd-af73-322b-2c80" primary="false" name="White Scars"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stormcalling" hidden="false" id="4a7e-871d-36e6-c483">
@@ -958,7 +972,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Power is used in the Movement Phase and can allow the Target Unit to move its full Rush distance as a normal Move.</characteristic>
             <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Call of the Wind Psychic Power in the Movement Phase, when selecting a Unit under their control that includes at least one Model with the Stormseer Trait to Move and before any Move is made for that Unit.</characteristic>
             <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Stormseer Trait that is part of the Unit that was selected to Move.</characteristic>
-            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Active Player with at least one Model within 12&quot; of the Focus and with Line of Sight to the Focus, including the Unit that the Focus is part of, and must only include Models with the White Scars Trait. The Target may not be a Unit that is Locked in Combat, or otherwise ineligible to Move normally, for example, it is under the effects of the Routed Status, and may not include any Models with the Vehicle Type. </characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Active Player with at least one Model within 12&quot; of the Focus and with Line of Sight to the Focus, including the Unit that the Focus is part of, and must only include Models with the White Scars Trait. The Target may not be a Unit that is Locked in Combat, or otherwise ineligible to Move normally, for example, it is under the effects of the Routed Status, and may not include any Models with the Vehicle Type.</characteristic>
             <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power are resolved immediately.</characteristic>
             <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1) Once the Focus and Target Unit have been decided, make a Manifestation Check.
 2) If this Psychic Power is successfully Manifested, until the end of the Phase, the Target Unit cannot Rush, but the Movement Characteristic of each Model in the Target Unit is modified by a value equal to that Model&apos;s Initiative Characteristic. 
@@ -1037,21 +1051,56 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9b5c-a98c-1e67-4e3d" includeChildSelections="true"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="fa5d-7077-596a-50c7" primary="true" name="Warlord"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="5eff-b3c7-fb28-7d06" primary="false" name="White Scars"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="7722-4566-a460-55e5" primary="false" name="Loyalist"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Qin Xa" hidden="false" id="aef2-d55a-ceca-ef8e" type="selectionEntry" targetId="0935-9158-92d0-5528" sortIndex="2">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="eeb7-a0e0-4968-a34d" includeChildSelections="true"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="eef4-89dd-03cd-4903" primary="true" name="High Command"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="e0b5-9a97-0834-318e" primary="false" name="White Scars"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="b301-97a8-1723-ca1c" primary="false" name="Loyalist"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Hibou Khan" hidden="false" id="237b-ac58-1954-957e" type="selectionEntry" targetId="fd81-80fc-3d80-5f8b" sortIndex="3">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="60e0-1c39-9467-7346" includeChildSelections="true"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="50fe-a0ff-cd68-26d4" primary="true" name="Command"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="e4f7-2bcc-930a-6386" primary="false" name="White Scars"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="2c84-0d3a-6f76-f040" primary="false" name="Loyalist"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Stormseer" hidden="false" id="613c-ffd0-7238-a10c" type="selectionEntry" targetId="5123-b5ea-c6dc-7bb9" sortIndex="4"/>
-    <entryLink import="true" name="Golden Keshing" hidden="false" id="37a0-e9fb-e17c-cd83" type="selectionEntry" targetId="fa6f-2652-34c9-2ea2" sortIndex="5"/>
-    <entryLink import="true" name="Ebon Keshig" hidden="false" id="795e-893e-346b-2ddb" type="selectionEntry" targetId="9f57-6829-5ec9-4d69" sortIndex="6"/>
-    <entryLink import="true" name="Kyzagan Assault Speeder" hidden="false" id="2755-5fcf-4ecd-79e6" type="selectionEntry" targetId="6efd-34c7-2212-1474" sortIndex="7"/>
+    <entryLink import="true" name="Stormseer" hidden="false" id="613c-ffd0-7238-a10c" type="selectionEntry" targetId="5123-b5ea-c6dc-7bb9" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="aab5-7c38-1ead-1be2" primary="true" name="Command"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="a1e8-5995-3ab7-1139" primary="false" name="White Scars"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Golden Keshing" hidden="false" id="37a0-e9fb-e17c-cd83" type="selectionEntry" targetId="fa6f-2652-34c9-2ea2" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="a12d-348a-b767-e62a" primary="true" name="Elites"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="d91e-5182-437f-a0eb" primary="false" name="White Scars"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ebon Keshig" hidden="false" id="795e-893e-346b-2ddb" type="selectionEntry" targetId="9f57-6829-5ec9-4d69" sortIndex="6">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="6992-d60a-1ddd-d53d" primary="true" name="Heavy Assault"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="f88a-a43e-12b1-2601" primary="false" name="White Scars"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kyzagan Assault Speeder" hidden="false" id="2755-5fcf-4ecd-79e6" type="selectionEntry" targetId="6efd-34c7-2212-1474" sortIndex="7">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="1091-cfaf-cd6e-6b3f" primary="true" name="Support"/>
+        <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="ff0e-ed87-bbf0-433a" primary="false" name="White Scars"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Swift of Action" id="d3e8-b33b-5486-1510" hidden="false">
