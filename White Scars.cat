@@ -407,7 +407,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98a1-71ed-c0dc-0871" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="385b-64d9-b788-d159" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
