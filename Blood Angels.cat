@@ -667,33 +667,6 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
         <categoryLink targetId="4381-ed35-c3fa-a225" id="0696-8e23-a7e7-c473" primary="false" name="Loyalist"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Inferno Pistol" hidden="false" id="0a98-b701-5f6c-1fc1" sortIndex="9">
-      <profiles>
-        <profile name="Inferno Pistol" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="338a-4406-71b6-1c00">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">6</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol, Melta (3)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Melta</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Melta (X)" id="e384-8fa1-63ae-abda" hidden="false" type="rule" targetId="8ef6-917e-93da-43c3">
-          <modifiers>
-            <modifier type="set" value="Melta (3)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Pistol" id="bd76-f96b-6aab-30d1" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
-      </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7221-b7a7-c76c-4053" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a11-8451-c7bb-462c" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Angelic Descent" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="37ec-4463-ee89-d337">
@@ -761,17 +734,17 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
   <forceEntries>
     <forceEntry name="Revelation Host" id="edb0-a5d8-84f1-4eee" hidden="true">
       <categoryLinks>
-        <categoryLink name="Prime Troops" hidden="false" id="a985-69b1-c09d-b12d" targetId="c3f9-a7f3-984b-3fda" type="categoryEntry">
+        <categoryLink name="Prime Troops" hidden="false" id="a985-69b1-c09d-b12d" targetId="c3f9-a7f3-984b-3fda">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a463-864c-f18e-02ad"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="51b5-0a71-a7ad-325b" targetId="88e6-d373-4152-0dd8" type="categoryEntry">
+        <categoryLink name="Troops" hidden="false" id="51b5-0a71-a7ad-325b" targetId="88e6-d373-4152-0dd8">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bac3-6192-e24d-4d09"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="39ab-9040-1100-4e88" targetId="5d5e-958f-e388-50b5" type="categoryEntry">
+        <categoryLink name="Elites" hidden="false" id="39ab-9040-1100-4e88" targetId="5d5e-958f-e388-50b5">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ede2-484b-c8ad-0654"/>
           </constraints>
