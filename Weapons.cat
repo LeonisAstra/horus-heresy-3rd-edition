@@ -5427,7 +5427,7 @@
             <modifier type="set" value="Breaching (6+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Aflame (X)" id="2df8-4c91-6275-9af2" hidden="false" type="rule" targetId="dcee-0ff4-ef56-6700">
+        <infoLink name="Aflame (X)" id="2df8-4c91-6275-9af2" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
           <modifiers>
             <modifier type="set" value="Aflame (1)" field="name"/>
           </modifiers>
@@ -5454,7 +5454,7 @@
             <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Aflame (X)" id="ebea-aee6-1a57-c1bf" hidden="false" type="rule" targetId="dcee-0ff4-ef56-6700">
+        <infoLink name="Aflame (X)" id="ebea-aee6-1a57-c1bf" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
           <modifiers>
             <modifier type="set" value="Aflame (1)" field="name"/>
           </modifiers>
@@ -5481,7 +5481,7 @@
             <modifier type="set" value="Breaching (6+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Aflame (X)" id="5405-f689-86cd-a9d9" hidden="false" type="rule" targetId="dcee-0ff4-ef56-6700">
+        <infoLink name="Aflame (X)" id="5405-f689-86cd-a9d9" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
           <modifiers>
             <modifier type="set" value="Aflame (1)" field="name"/>
           </modifiers>
@@ -5508,7 +5508,7 @@
             <modifier type="set" value="Breaching (6+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Aflame (X)" id="41df-ebfc-f208-8d5b" hidden="false" type="rule" targetId="dcee-0ff4-ef56-6700">
+        <infoLink name="Aflame (X)" id="41df-ebfc-f208-8d5b" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
           <modifiers>
             <modifier type="set" value="Aflame (1)" field="name"/>
           </modifiers>
@@ -5687,10 +5687,6 @@
     <selectionEntryGroup name="Perdition Weapons" id="6a6b-1cda-b6a4-8b3e" hidden="false" defaultSelectionEntryId="none">
       <entryLinks>
         <entryLink import="true" name="Blade of Perdition" hidden="false" id="7d13-ed02-8de8-7853" type="selectionEntry" targetId="a3a1-84f7-4e23-3ed6" sortIndex="1">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="246d-c5b5-ff8a-fdfe" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06a2-48bc-3c53-5060" includeChildSelections="false"/>
-          </constraints>
           <modifiers>
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditionGroups>
@@ -5701,16 +5697,17 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Axe of Perdition" hidden="false" id="3608-c39d-08d1-c393" type="selectionEntry" targetId="81b3-438e-041a-35ee" sortIndex="2">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d49-1761-75ca-c8ca" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8be6-d9d0-7813-2776" includeChildSelections="false"/>
-          </constraints>
           <modifiers>
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditionGroups>
@@ -5724,10 +5721,6 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Maul of Perdition" hidden="false" id="1ccc-b6f7-5cc8-a4af" type="selectionEntry" targetId="5cd6-6c5c-b464-4b27" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bb2-691c-830e-0fea" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6027-ca0a-033b-fb16" includeChildSelections="false"/>
-          </constraints>
           <modifiers>
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditionGroups>
@@ -5741,10 +5734,6 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Spear of Perdition" hidden="false" id="b344-91e6-879f-d3a1" type="selectionEntry" targetId="9aca-66f6-501e-d86d" sortIndex="4">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ccb-59cb-8fec-c939" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8119-2f9d-0e7b-adce" includeChildSelections="false"/>
-          </constraints>
           <modifiers>
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditionGroups>
