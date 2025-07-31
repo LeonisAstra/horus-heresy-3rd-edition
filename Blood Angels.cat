@@ -667,6 +667,105 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
         <categoryLink targetId="4381-ed35-c3fa-a225" id="0696-8e23-a7e7-c473" primary="false" name="Loyalist"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="83ae-08c8-bdf1-ccaa" sortIndex="5">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="f642-bc6e-f026-a8e4" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Paired Talons of Perdition" hidden="false" id="5cf8-4783-24f7-ab8d" sortIndex="1">
+              <profiles>
+                <profile name="Paired Talons of Perdition" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="4b0a-4ba2-ba04-660b">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+2</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Aflame (2)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Flame</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Aflame (X)" id="4147-0d27-e884-fa4b" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+                  <modifiers>
+                    <modifier type="set" value="Aflame (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c435-de3d-b0b8-233c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a59-0618-1658-0602" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="4a1b-a57a-b59c-0c14"/>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange both:" id="a001-2be3-50f0-83a0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="468c-dafb-74b6-36c9" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="58e9-3f97-cb49-29e0" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8faa-0a49-f697-ac8d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="a522-86e6-b3b8-a064" type="selectionEntry" targetId="b1e1-e164-5877-6734" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e820-67bb-3271-9d34" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f076-372b-cb20-6401" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="99db-499c-0f6c-f2ab" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="648d-ea56-7379-4322" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="45ec-ad9d-5e73-aecb" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a4f-466c-4afc-f580" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cec-5607-411a-753d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="a892-8f25-5824-80bd" primary="true" name="Walker Model Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a1a-2781-9125-74f2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a7-4bd4-db91-7ac4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="2687-7005-2b67-65ed" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="e237-adbf-d447-6d03" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="a381-4a76-6fe9-a9a0" primary="true" name="War-engine"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Crimson Paladins" hidden="false" id="80bb-caf1-d1fc-0e26" publicationId="b905-0414-1057-bb34" page="218" sortIndex="6">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Crimson Exemplar" hidden="false" id="278d-bf9a-e0f6-bf00" sortIndex="1"/>
+        <selectionEntry type="upgrade" import="true" name="Crimson Paladin" hidden="false" id="96d3-b784-a326-ba42" sortIndex="2"/>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dawnbreaker Cohort" hidden="false" id="410b-50c3-4f12-1c67" sortIndex="7">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dawnbreaker Champion" hidden="false" id="ea92-6cc8-da41-db4c" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="ae7a-a3b6-85b0-6bbd"/>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dawnbreaker" hidden="false" id="19b6-5ae5-10d3-46ec" sortIndex="2"/>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Angel&apos;s Tears" hidden="false" id="06d5-d1b3-de1f-7564" sortIndex="8">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Erelim" hidden="false" id="bbd1-0a10-5470-9b43" sortIndex="2"/>
+        <selectionEntry type="upgrade" import="true" name="Arch-Erelim" hidden="false" id="ed0b-6ee1-6d21-4d1e" sortIndex="1"/>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Angelic Descent" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="37ec-4463-ee89-d337">
@@ -696,6 +795,9 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
         <categoryLink targetId="53b2-d251-a827-8e73" id="1ac1-5daa-40db-214d" primary="false" name="Blood Angels"/>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="761e-7e03-a364-ef04" primary="false" name="Loyalist"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="d036-bbb6-8fbc-f6ab"/>
+      </selectionEntries>
     </entryLink>
     <entryLink import="true" name="Chapter Master Raldoron" hidden="false" id="89e1-921c-c830-5d45" type="selectionEntry" targetId="fef2-a389-74d3-47c8" sortIndex="2">
       <categoryLinks>
@@ -719,6 +821,11 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
         <categoryLink targetId="4381-ed35-c3fa-a225" id="0d86-c54e-1ba1-e6c0" primary="false" name="Loyalist"/>
         <categoryLink targetId="53b2-d251-a827-8e73" id="e289-5f20-1210-a5ab" primary="false" name="Blood Angels"/>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ea27-c370-1ecd-aa38" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="5dc8-3fde-9013-ef36" type="selectionEntry" targetId="83ae-08c8-bdf1-ccaa">
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="ca20-6c57-c851-b03b" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
