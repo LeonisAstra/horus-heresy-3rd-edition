@@ -1631,19 +1631,21 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
         <categoryLink targetId="5d5e-958f-e388-50b5" id="88b3-1cfc-f972-4e85" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="The Angel&apos;s Tears" hidden="false" id="edbe-4d87-ab3d-6f1b" type="selectionEntry" targetId="06d5-d1b3-de1f-7564"/>
+    <entryLink import="true" name="The Angel&apos;s Tears" hidden="false" id="edbe-4d87-ab3d-6f1b" type="selectionEntry" targetId="06d5-d1b3-de1f-7564" sortIndex="8"/>
   </entryLinks>
   <sharedRules>
     <rule name="Encarmine Fury" id="2acc-e20b-bef4-a9cc" hidden="false">
       <comment>Legion Tactica</comment>
       <description>&quot;The strength of their attacks ins increased when Blood Angels successfully Charge.&quot;
-
-
 On any Turn in which they made a Charge Move, Models with this Special Rule modify their Strength Characteristic by +1 until the end of the Turn.</description>
     </rule>
     <rule name="The Blood is Forever" id="8daf-a58f-2cb6-034d" hidden="false">
       <description>&quot;Models with this Special Rule gain a Damage Mitigation Roll when they are outnumbered.&quot;
 While the Unit a Model with this Special Rule is part of is Locked in Combat with an enemy Unit or Units who total number of Models outnumber them, a Model with this Special Rule gains the Feel No Pain (5+) Special Rule. If outnumbered by more than twice their own number, Models with this Special Rule instead gain the Feel No Pain (4+) Special Rule. Any Model that joins a Unit that includes any Models with this Special Rule does not gain this Special Rule and does not count for the purpose of determining when the Unit is outnumbered.</description>
+    </rule>
+    <rule name="Revenants" id="a324-366f-d373-8d25" hidden="false">
+      <comment>Prime Upgrade</comment>
+      <description>Models in a Unit selected to fill a Prime Force Organization Slot with this Prime Advantage gain the Fear (1) Special Rule</description>
     </rule>
   </sharedRules>
   <forceEntries>
